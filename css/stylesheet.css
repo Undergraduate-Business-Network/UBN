@@ -10,6 +10,9 @@
 
 
 /******************************** Nav Bar Styling *****************************/
+@font-face{
+    font-family: Bebas Neue; src:url('../fonts/BebasNeue.otf');
+}
 
 #logo{
 	float:left;
@@ -21,14 +24,18 @@
   	transition:.25s;
 }
 /*Hover to change the text gray*/
-.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus, .nav-link:hover  {
     background-color: transparent;
     border-bottom: 2px solid;
     color:white; !important;
     opacity: 1.0;
 }
 
-
+.current{
+    border-bottom: 2px solid;
+    color:white; !important;
+    opacity: 1.0 !important;
+}
 /*Changes Collapse Navbar to be white*/
 .navbar-header span{
 	background-color: white;
@@ -37,7 +44,7 @@
 
 .top-nav-bar .nav-link{
     
-    padding: 5px 0 2px 0;
+    padding: 5px 0 0 0;
     margin: 8px 10px 0 10px;
 	color: white;
     opacity: .8;
@@ -68,13 +75,13 @@
 	font-size: 12px;
 	font-family:'Open Sans', Helvetica, Arial sans-serif;
 
-
 }
 
 /******************************** END OF NAVBAR *****************************/
 
 /***** SIDE BAR *****/
-
+body{
+}
 #slide-wrapper{
     position:fixed;
     height: 100%;
@@ -84,7 +91,8 @@
     width: 0;
     
     visibility: hidden;
-    background-color:  #F59A44;
+   /* background-color:  #F59A44;*/
+    background-color: rgba(219, 167, 46, 1.0);
     z-index: 200;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -132,34 +140,37 @@ button:focus {
 .nav-items{
   
     margin-top: 75px;
-   
     font-family: "Open Sans";
     font-size: 12px;
     padding: 0;
     list-style: none;
     
     width: 100%;
+    
 
 }
 
 .nav-item{
+    ;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1.5px white dotted;
+    /*border-bottom: 1.5px white dotted;*/
+    
 }
 
 .nav-item .nav-link{
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
-    
+    text-decoration: none !important;
     color: white;
  
 }
+
 
 .nav-item-last{
     border: none;
@@ -167,8 +178,7 @@ button:focus {
 
 .nav-item .nav-link:hover{
     text-decoration: none;
-
-    
+ 
 }
 
 
@@ -240,9 +250,7 @@ button:focus {
 }
 
 
-/*Spring Recruit Description*/
 
-/*Spring Recruit Title*/
 #first-panel h1{
     
     margin-left: auto;
@@ -400,6 +408,7 @@ button:focus {
     background-size: cover;
     position: relative;
     overflow:hidden;
+    font-family: 'Bebas Neue';
     
 }
 
@@ -413,10 +422,14 @@ button:focus {
     margin: 5% auto 0 10%;
     width: 50%;
     max-width: 300px;
-    font-size: 68px;
+    font-size: 78px;
     color: grey;
     visibility: visible;
     opacity: 1.0;
+    -o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
 
 }
 
@@ -425,10 +438,15 @@ button:focus {
     position: relative;
     width: 60%;
     max-width: 400px;
-    float: right;
-    margin: 10% 5% 0 5%;
-    font-size: 68px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    font-size: 100px;
     opacity: 0;
+    color: #4C001A;
+    -o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
    
   
 }
@@ -684,17 +702,17 @@ text-align:center;
 
 }
 
-
-.sponsor-logo .row{
+.sponsor-logos{
+    max-width: 850px;
+    width: 60%;
 	text-align:center;
-
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .sponsor-logo{
-	margin-bottom: 50px;
+    margin-bottom: 50px;
+    
 }
-
 
 /***************************** END OF ABOUT PAGE **************************/
 
@@ -878,7 +896,7 @@ textarea{
 /***************************SITE FOOTER*********************************/
 
 #site-footer{
-	background-color:#303030;
+	background-color:#454545;
 	font-family: 'Open-Sans', Helvetica;
 	color:white;
 	width: 100%;
@@ -891,7 +909,7 @@ textarea{
 }
 
 #home-page-footer{
-    background-color:#303030;
+    background-color:#454545;
 	font-family: 'Open-Sans', Helvetica;
 	color:white;
 	width: 100%;
