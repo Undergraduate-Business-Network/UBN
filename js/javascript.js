@@ -82,42 +82,42 @@ $(document).scroll(function(){
 
 
 $(window).scroll(function(){
-    if($(window).scrollTop() < 25){
+    if($(window).scrollTop() < 10){
         $('#conquer').css('opacity','1.0');
         $('#challenge').css('opacity','0');
     }
-    else if($(window).scrollTop() > 20
-                && $(window).scrollTop() < 30){
+    else if($(window).scrollTop() > 10
+                && $(window).scrollTop() < 20){
         $('#conquer').css('opacity','.9');
         $('#challenge').css('opacity','.1');
         
     }
-    else if($(window).scrollTop() > 40
-                && $(window).scrollTop() < 50){
+    else if($(window).scrollTop() > 20
+                && $(window).scrollTop() < 30){
         $('#conquer').css('opacity','.8');
         $('#challenge').css('opacity','.2');   
     }
-    else if($(window).scrollTop() > 50
-                && $(window).scrollTop() < 60){
+    else if($(window).scrollTop() > 30
+                && $(window).scrollTop() < 40){
         $('#conquer').css('opacity','.7');
         $('#challenge').css('opacity','.3');   
     }
-    else if($(window).scrollTop() > 60
-                && $(window).scrollTop() < 70){
+    else if($(window).scrollTop() > 40
+                && $(window).scrollTop() < 55){
         $('#conquer').css('opacity','.6');
         $('#challenge').css('opacity','.4');   
     }
-    else if($(window).scrollTop() > 70
-                && $(window).scrollTop() < 80){
+    else if($(window).scrollTop() > 55
+                && $(window).scrollTop() < 70){
         $('#conquer').css('opacity','.5');
         $('#challenge').css('opacity','.5');   
     }
-    else if($(window).scrollTop() > 80
-                && $(window).scrollTop() < 90){
+    else if($(window).scrollTop() > 70
+                && $(window).scrollTop() < 85){
         $('#conquer').css('opacity','.4');
         $('#challenge').css('opacity','.6');   
     }
-    else if($(window).scrollTop() > 90
+    else if($(window).scrollTop() > 85
                 && $(window).scrollTop() < 100){
         $('#conquer').css('opacity','.3');
         $('#challenge').css('opacity','.7');   

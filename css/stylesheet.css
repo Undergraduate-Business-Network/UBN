@@ -303,56 +303,49 @@ button:focus {
 
 
 /*Message From The President*/
-.message{
-
-	margin-top: 3%;
+#presidential-message{
+	margin: 5% auto 20% auto;
 	font-family: 'Open Sans', Helvetica, Arial sans-serif;
 	color: black;
+    width:60%;
+    
 
 }
 
-.message h1{
+
+#presidential-message h2{
+
+	margin-top: 5%;
+    margin-bottom: 2%;
 	text-align: center;
 	text-transform: uppercase;
-	font: bold;
-	font-size: 42px;
-	margin-bottom: 0px;
-}
-
-.message h2{
-
-	margin-top: 3%;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 24px;
 
 }
 
-.message p{
+#presidential-message p{
 	margin-top:3%;
 	font-size: 14px;
-	margin-right:4%;
-	margin-left:4%;
 	text-align: center;
 }
 
-.message h3,h4{
-	margin-top: 3%;
-	text-align: center;
-	font-size:18px;
+.president-signature{
+    margin-top: 50px;
+    line-height: 8%;
+}
+.president-signature p{
+    text-align: center;
+    font-size: 14px;
+        
 }
 
-.message h4{
-	text-align: center;
+.line-divider{
+    height: 1px;
+    background-color: #303030;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.message h5{
-	text-align: center;
-	font-size:18px;
-	margin-bottom: 10%;
-
-}
-
 #gpn{
 
 	margin-top: 10%;
@@ -450,20 +443,42 @@ button:focus {
    
   
 }
-.calendar{
-   
-    margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 5%;
+
+
+@media(max-width: 992px){
+    #calendar-container{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 40%;
+        
+    }
+
 }
+
+ #calendar-container{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+        
+    }
+
+#calendar-block{
+    height: 200px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
 
 
 .calendar-title h1{
 	font-family:'Open Sans', Helvetica, Arial sans-serif;
 	font-size: 42px;
-	margin-top: 5%;
+	margin-top: 10%;
 	text-align:center;
-	margin-bottom: 30px;
+	margin-bottom: 5%;
 	text-transform: uppercase;
     font-weight: bolder;
 }
@@ -502,18 +517,11 @@ button:focus {
 
 }
 
-.rsvp{
-
-	text-align: center;
-	margin-bottom: 5%;
-
-
-
-}
 
 /*For the Learn More Button*/
-#rsvp-button {
-	background-color:#303030;
+
+.rsvp-apply-button{
+    background-color:#303030;
 	border-radius: 20px;
 	width: 150px;
 	color: white;
@@ -523,11 +531,12 @@ button:focus {
 	padding: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
-
 }
 
-#rsvp-button:hover{
-    background-color: #DBA72E ;
+.rsvp-apply-button:hover{
+
+    background-color: #DBA72E;
+    color: white;
     /*background-color: #CF5230;*/
     -o-transition:.5s;
   	-ms-transition:.5s;
@@ -537,17 +546,11 @@ button:focus {
 
 .button-col{
 	text-align: center;
-	margin-bottom: 5%;
+    margin-top: 5%;
+	margin-bottom: 10%;
 
 }
 
-.apply-extra{
-
-	padding-top: 30px;
-	padding-right: 15%;
-	padding-left: 15%;
-
-}
 
 
 /***************************** END OF RECRUIT PAGE **************************/
@@ -623,13 +626,9 @@ button:focus {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-family:'Open sans';
-    font-size: 48px;
-    
-    
-}
-
-.provide-title h1{
-	margin-bottom: 5%;
+    font-size: 42px;
+ 
+	margin-bottom: 75px;
 	text-align:center;
 }
 
@@ -646,10 +645,13 @@ button:focus {
 }
 
 #provide-block strong{
-	font-size: 16px;
+	 font-size: 16px;
+     text-transform: uppercase;
+     
 }
 
 #provide-block p{
+    margin-top: 10px;
 	font-size: 14px;
 }
 
@@ -686,32 +688,30 @@ text-align:center;
 }
 
 .sponsors h1{
-	margin-top: 75px;
-    margin-bottom: 75px;
+	margin-top: 77px;
+    margin-bottom: 25px;
 	font-family: 'Open Sans';
-	margin-bottom: 5%;
 	text-align: center;
-	font-size: 48px;
+	font-size: 42px;
+    text-transform: uppercase;
 	
 }
 
-
-.sponsor-logo .col-md-3{
-
+#sponsor-logo{
 	text-align:center;
+    heignt: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
 
 }
 
 .sponsor-logos{
     max-width: 850px;
-    width: 60%;
+    width: 90%;
 	text-align:center;
-	margin-bottom: 100px;
-}
-
-.sponsor-logo{
-    margin-bottom: 50px;
-    
+	margin-bottom: 150px;
+ 
 }
 
 /***************************** END OF ABOUT PAGE **************************/
@@ -896,7 +896,7 @@ textarea{
 /***************************SITE FOOTER*********************************/
 
 #site-footer{
-	background-color:#454545;
+	background-color:#303030;
 	font-family: 'Open-Sans', Helvetica;
 	color:white;
 	width: 100%;
