@@ -58,7 +58,9 @@ else{
 
 
 
-
+/**
+ *  Function for the navigation bar to show as the user scrolls down
+ **/
 $(document).scroll(function(){
     if($(this).scrollTop() > 100)
     {   
@@ -80,9 +82,17 @@ $(document).scroll(function(){
     
 });
 
-
+/**
+ *  Function to change the opacity of Conquer and Challenge in the recruitment
+ *  page.
+ **/
 $(window).scroll(function(){
     if($(window).scrollTop() < 10){
+       /* $('#conquer').css('transition', '.5s');
+        $('#conquer').css('-o-transition', '.5s');
+        $('#conquer').css('-moz-transition', '.5s');
+        $('#conquer').css('-webkit-transition', '.5s');
+        $('#conquer').css('-ms-transition', '.5s');*/
         $('#conquer').css('opacity','1.0');
         $('#challenge').css('opacity','0');
     }
@@ -134,7 +144,13 @@ $(window).scroll(function(){
     }
     else if($(window).scrollTop() > 120){
         $('#conquer').css('opacity','0');
-        $('#challenge').css('opacity','1.0');   
+        $('#challenge').css('opacity','1.0');
+        /*$('#challenge').css('transition', '.5s');
+        $('#challenge').css('-o-transition', '.5s');
+        $('#challenge').css('-moz-transition', '.5s');
+        $('#challenge').css('-webkit-transition', '.5s');
+        $('#challenge').css('-ms-transition', '.5s');*/
+      
     }
     
     
@@ -142,7 +158,9 @@ $(window).scroll(function(){
     
 });
 
-/*Function to show hidebar*/
+/**
+ *  Function to show and hide sidebar for collapsed navigation
+ **/
 $("#menu-toggle, .mask, #close-button").click(function(e) {
     $('.mask').toggleClass('toggled');
     $('#slide-wrapper').toggleClass('toggled');
@@ -166,19 +184,74 @@ $("#menu-toggle, .mask, #close-button").click(function(e) {
     }
 });
 
+/**
+ *  Function to validate the information in the contact form
+ **/
+function validate(){
+    
+    
+    var nameVal = document.getElementById("name").value;
+    var emailVal = document.getElementById("email").value;
+    var messageVal = document.getElementById("message").value;
+    
+    var nameFlag = true;
+    var emailFlag = true;
+    var messageFlag = true;
+    
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var result = filter.test(emailVal);
+    console.log(result);
+ 
+    if(nameVal == null || nameVal == ""){
+        $("#require-name").css("visibility","visible");
+        nameFlag = false;
+        console.log("no name");
+    }
+    else{
+        $("#require-name").css("visibility","hidden");
+    }
+    
+    if(emailVal == null || emailVal == "" || !filter.test(emailVal)) {
+        $("#require-email").css("visibility", "visible");
+        emailFlag = false;
+    }
+
+    else{
+        $("#require-email").css("visibility", "hidden");
+    }
+    
+    if(messageVal == null || messageVal == ""){
+        $("#require-message").css("visibility", "visible");
+        messageFlag = false;
+    }
+    else{
+        $("#require-message").css("visibility", "hidden");
+    }
+    
+    if(!nameFlag || !emailFlag || !messageFlag){
+        return false;
+    }
+    
+}
+
+/**
+ * Google Map plugin for the contact page
+**/
+
+function initialize(){
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+        center: new google.maps.LatLng(32.8810, -117.2380),
+        zoom: 14,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+
+/**TESTING FUNCTIONS **/
 $('.mask').click(function(e){
     console.log("CLICKED");
     
 });
-
-
-
-
-//#192f42
-
-//different test colors
-//FFCC66
-//8ABBCC
-//00254A
-//00254A
-//FFCC00

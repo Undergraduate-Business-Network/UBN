@@ -1,106 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<!-- CSS file -->
-	<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+  <link rel="shortcut icon" href="img/webicon.ico">
+  <title>UCSD UBN | Recruitment</title>
+  
+  <!-- CSS file -->
+  <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
-	<!-- Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
 
 </head>
 
 <body>
+    <nav id="slide-wrapper" class="nav-menu slide-wrapper">
+    <button type = "button" class="fa fa-times-circle fa-2x" id = "close-button"></button>
+    <ul class="nav-items">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="members.html" class="nav-link">Members</a></li>
+        <li class="nav-item"><a href="recruitment.html" class="nav-link current">Recruitment</a></li>
+        <li class="nav-item nav-item-last"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+    </nav>
+  <!-- Nav Bar -->
+    <div id = "wrapper">
+        <nav class = "navbar transparent navbar-fixed-top">	
+            <div class = "navbar-header smooth-scroll">
+                <button type="button" id = "menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="img/WebsiteLogo.png" id="logo">
+                </a>
+            </div>
+            <div class = "top-nav-bar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="smooth-scroll">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="smooth-scroll">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
 
-	<!-- Nav Bar --> 
-	<nav class = "navbar transparent navbar-fixed-top">
-			
-			<div class = "navbar-header smooth-scroll">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		            <span class="sr-only">Toggle navigation</span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <span class="icon-bar"></span>
-		            <!--<span class="collapse-txt">Menu</span>-->
-          		</button>
-          		<a class="navbar-brand" href="#">
-          		<img alt="Brand" src="img/WebsiteLogo.png" id="logo">
-          		</a>
+                    <li class="smooth-scroll">
+                        <a class="nav-link" href="members.html">MEMBERS</a>
+                    </li>
+                    <li class="smooth-scroll">
+                        <a class="nav-link" href="recruitment.html">RECRUITMENT</a>
+                    </li>
+                    <li class="smooth-scroll">
+                        <a class="nav-link current" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> <!-- /.navbar -->
+        
+        <div id="contact-panel" data-type="background" data-speed="10">
+            <div id="contact-header">
+                <p>Please don't hesitate to</p>
+                <h1> Contact Us</h1>
+            </div>
         </div>
-
-        <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="smooth-scroll">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="smooth-scroll">
-              <a class="nav-link" href="about.html">ABOUT</a>
-            </li>
-
-            <li class="smooth-scroll">
-              <a class="nav-link" href="members.html">EXECUTIVE MEMBERS</a>
-            </li>
-
-
-            <li class="smooth-scroll">
-              <a class="nav-link" href="recruitment.html">RECRUITMENT</a>
-            </li>
+        
+        <div class = "contact-content">
             
-            <li class="smooth-scroll">
-              <a class="nav-link" href="#site-footer">CONTACT</a>
-            </li>
+            <form name = "contact-form" id="contact-form" enctype="multipart/form-data" action="//formspree.io/ubn.ucsd@gmail.com"
+      method="POST" onsubmit= "return validate()">
+                <div class = "line-seperator"> </div>
+                <div class = "message-header">
+                    <p>Message Us</p>
+                
+                </div>
+                <div class="row">
+                    <p class = "required-message" id = "require-name">Name required</p>
+                    <input id="name" placeholder = "Name" class="input" name="name" type="text" value="" size="30" /><br />
+                </div>
+                <div class="row">
+                    <p class = "required-message" id = "require-email">Valid email required</p>
+                    <input id="email" placeholder = "Email" class="input" name="email" type="text" value="" size="30"  /><br />
+                </div>
+                <div class="row">
+                    <p class = "required-message" id = "require-message">You forgot to say something</p>
+                    <textarea id="message" placeholder = "Hi, I just wanted to say..." class="input" name="message" rows="7" cols="30"></textarea><br />
+                </div>
+                <input id="submit-button" type="submit" value="Send" />
+            </form>						
 
-          </ul>
+            <div class ="contact-right">
+                <div class = "line-seperator"> </div>
+                <div class = "map-header">
+                    <p>Find us</p>
+                </div>
+                <div id = "map"> </div>
+            </div>
         </div>
 
-	</nav> <!-- /.navbar -->
+        <footer id = "site-footer">
+            <div class = "footer-contents">
+                <div class = "contact">
+                    <a href="https://www.facebook.com/UCSD.UBN?fref=ts" target="_blank" class="fa fa-lg fa-facebook-square"></a>
+                    <a href = "mailto:ubn.ucsd@gmail.com" class="fa-lg fa fa-envelope"></a>
+                    <a href="#" class="fa fa-lg fa-google-plus-square"></a>
+                </div>
+                <div class = "find-us">
+                    <p>University of California, San Diego</p>
+                    <p>9500 Gilman Dr., La Jolla, CA 92093</p>
+                </div>   
+            </div>
+            <div class = "the-creator">
+                <p>Website by</p>
+                <a href = "#">Daniel Kong</a>
+            </div>
+        </footer>
+
+    </div> <!-- /wrapper -->
 
 
 
+<div id="mask" class="mask"></div><!-- /c-mask -->
 
 
 
-
-
-
-
-
-
-
-
-  <footer id = "site-footer">
-<div class = "container">
-<div class = "left-side">
-  <p>Find us on Facebook</p>
-  <div id ="fb-logo">
-      <a href = "https://www.facebook.com/UCSD.UBN?fref=ts" target="_blank">
-      <img src ="img/facebook-black.png" alt = "logo" width = "50">
-      </a>
-  </div>
-  <p>Send us a message </p>
-  <div id = "mail">
-    <a href = "mailto:ubn.ucsd@gmail.com"> 
-        <img src = "img/envelope.png" alt = "mail" width = "50">
-    </a>
-  </div>
-</div>
-
-<div class = "right-side">
-  <h1>Find us</h1>
-  <p>University of California, San Diego</p>
-  <p>9500 Gilman Dr., La Jolla, CA 92093</p>
-</div>
-</div>
-
-
-</footer>
-
-
-
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 
 <script src = "js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script> 
@@ -108,10 +140,6 @@
 <script type="text/javascript" rel="javascript" src="js/javascript.js"></script>
 
 
-
 </body>
 
 </html>
-
-
-
