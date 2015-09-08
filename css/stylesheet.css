@@ -80,7 +80,18 @@
 /******************************** END OF NAVBAR *****************************/
 
 /***** SIDE BAR *****/
-body{
+
+.sidebar-logo{
+    text-align: center;
+    margin-top: 30px;
+
+    
+}
+.sidebar-title{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans';
 }
 #slide-wrapper{
     position:fixed;
@@ -139,22 +150,21 @@ button:focus {
 }
 .nav-items{
   
-    margin-top: 75px;
+    margin-top: 35px;
     font-family: "Open Sans";
     font-size: 12px;
     padding: 0;
     list-style: none;
-    
     width: 100%;
+  
     
-
 }
 
 .nav-item{
-    ;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -219,7 +229,7 @@ button:focus {
 /*Sets the Background of first panel Picture*/
 
 #landing-home{
-  background: url(../img/bridge.jpg)no-repeat center center fixed; 
+    background: url(../img/bridge.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -237,14 +247,14 @@ button:focus {
 }
 /*Article of contents*/
 #first-panel article {
-  top: 35%;
-  text-align: center;
-  position: relative;
-  font-family: 'Open Sans', Helvetica, Arial sans-serif;
-  text-transform: uppercase;
-  color:white;
-  width: 100%;
-  z-index: 100;
+    top: 35%;
+    text-align: center;
+    position: relative;
+    font-family: 'Open Sans', Helvetica, Arial sans-serif;
+    text-transform: uppercase;
+    color:white;
+    width: 100%;
+    z-index: 100;
  
 
 }
@@ -385,14 +395,13 @@ button:focus {
 /******************************** RECRUIT PAGE *******************************/
 
 .navbar-recruit{
-   background-color: rgba(48, 48, 48, .4)
+   background-color: rgba(48, 48, 48, .4);
 
 }
 
 .recruit-banner{
-    background: url(../img/recruitment-2015.jpg) 50% 0 no-repeat fixed;
+    background: url(../img/recruitment-2015.jpg);
     height: 700px;
-    margin: -20px auto;
     width: 100%;
     top: 0;
     -webkit-background-size: cover;
@@ -554,7 +563,7 @@ button:focus {
 
 #first-about-panel {
   /*background: url(../img/san-diego-dark.png) 50% 0 no-repeat fixed;*/
-  background: url(../img/bench.jpg) 50% 0 no-repeat fixed;
+  background: url(../img/bench.jpg);
   height: 600px;
   margin: 0 auto;
   width: 100%;
@@ -599,7 +608,7 @@ button:focus {
 
 
 #second-about-panel {
-  background: url(../img/airplane.jpg) 50% 0 no-repeat fixed;
+  background: url(../img/airplane.jpg);
   height: 100%;
   min-height: 600px;
   margin: 0 auto;
@@ -713,7 +722,7 @@ text-align:center;
 /***************************** MEMBERS PAGE **************************/
 
 #member-panel{
-  background: url(../img/group_pic.jpg) 50% 0 no-repeat fixed;
+  background: url(../img/group_pic.jpg);
   height: 100%;
   min-height: 600px;
   margin: 0 auto;
@@ -792,17 +801,21 @@ text-align:center;
     filter: alpha(opacity=40);
 }
 
-#member-block .linkedin:hover + .image{
+#member-block .member-icon-row:hover + .image{
 	opacity: .5;
 	filter: alpha(opacity=40);
 }
 
 .img-container{
-
+    background-color: black;
 	position:relative;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
+/*
 .img-container:hover .linkedin{display:block;}
 .linkedin{
 	position : absolute;
@@ -812,6 +825,36 @@ text-align:center;
     margin:0 auto; left:0px;
     right:0px;
     z-index:100
+}*/
+
+.member-icon-row{
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    margin:0 auto; left:0px;
+    z-index: 100;
+}
+
+.img-container:hover .member-icon-row{
+    display: block;
+}
+
+.mem-linkedin{
+    margin-right: 5px;
+}
+
+.mem-user{
+    margin-left: 5px;
+ 
+}
+
+.mem-user:hover{
+    color: dimgray;
+}
+
+.mem-linkedin:hover{
+   color:#007bb5
 }
 
 /***************************** END OF MEMBERS PAGE **************************/
@@ -827,7 +870,7 @@ text-align:center;
 }*/
 
 #contact-panel{
-    background: url(../img/cab.jpg) 100% 0 no-repeat fixed;
+    background: url(../img/cab.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -862,9 +905,9 @@ text-align:center;
 }
 
 #map{
-    margin: 25px 25px 50px auto;
-    width: 400px;;
-    height: 300px;
+    margin: 45px 25px 50px auto;
+    width: 275px;;
+    height: 275px;
     margin-left: auto;
     margin-right: auto;
     
@@ -909,6 +952,14 @@ text-align:center;
     
 }
 
+.form-fields{
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    
+}
+
 .message-header{
     margin-left: -15px;
     margin-top: 18px;
@@ -944,6 +995,56 @@ text-align:center;
     visibility: hidden;
 }
 
+
+/***************************Member Profile Page**************************/
+
+.navbar-member{
+     background-color: #303030;
+}
+.member-name{
+    text-align: center;
+}
+
+.member-profile-page{
+    margin: 150px auto 100px auto;
+    width: 70%;
+   
+}
+
+.border-seperator{
+    height: 1px;
+    background-color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.member-content{
+   
+
+}
+
+.member-page-img{
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+    padding-bottom: 10px;
+
+    
+}
+
+.member-info{
+    text-decoration: none;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.member-info > li{
+    margin-bottom: 10px;
+    
+}
 /***************************SITE FOOTER*********************************/
 
 #site-footer{

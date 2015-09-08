@@ -10,6 +10,7 @@ $(function() {
 });
 
 
+/*
 $(document).ready(function(){
 
   var $window = $(window); 
@@ -24,7 +25,7 @@ $(document).ready(function(){
       });
   });
 });
-
+*/
 
 
 
@@ -68,10 +69,14 @@ $(document).scroll(function(){
        $('.navbar').css({"border-bottom": "4px solid gray"});
        $('#logo').css({"height": "50px"});
        $('.navbar').css({"padding-bottom": "0px"});
+     
+       
     } else {
        
        $('.navbar').css({"background":"transparent"});
-        $('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
+       $('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
+       $('.navbar-member').css({"background-color": "#303030"});
+  
        $('.navbar-collapse').css({"background":"transparent"});
        $('.navbar').css({"border-bottom": "0px solid white"});
        $('#logo').css({"height": "65px"});
