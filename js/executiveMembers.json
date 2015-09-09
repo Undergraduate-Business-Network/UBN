@@ -1,0 +1,45 @@
+[
+    {
+        "linkedin":"https://www.linkedin.com/pub/daniel-wen/5a/183/283",
+        "memProfile":"members/member49.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Daniel Wen",
+        "position": "President"
+    },
+    {
+        "linkedin":"https://www.linkedin.com/in/clarencextan",
+        "memProfile":"members/member46.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Clarence Tan",
+        "position": "VP Adminstration"
+    },
+    {
+        "linkedin":"https://www.linkedin.com/in/elizabethvchiang",
+        "memProfile":"members/member54.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Elizabeth Chiang",
+         "position": "VP Membership"
+    },
+    {
+        "linkedin":"https://www.linkedin.com/pub/masada-hutabarat/b8/141/aa",
+        "memProfile":"members/member14.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Masada Hutabarat",
+         "position": "VP Professional Development"
+    },
+    {
+        "linkedin":"https://www.linkedin.com/in/timothyhtam",
+        "memProfile":"members/member45.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Timothy Tam",
+         "position": "VP Public Relations & Marketing"
+    },
+    {
+        "linkedin":"https://www.linkedin.com/pub/brian-lee/84/106/a2",
+        "memProfile":"members/member22.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Brian Lee",
+        "position": "VP Social Affairs"
+    }
+
+]

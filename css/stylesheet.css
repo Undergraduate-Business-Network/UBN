@@ -223,6 +223,21 @@ button:focus {
 /*Sets the Background of first panel Picture*/
 
 #landing-home{
+    /*background: url(../img/bridge.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+    margin-top: -20px;
+    display: none;*/
+
+
+
+}
+
+#home-panel{
     background: url(../img/bridge.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -231,6 +246,7 @@ button:focus {
     height: 100%;
     padding: 0;
     margin-top: -20px;
+    display: none;
 
 
 }
@@ -412,6 +428,7 @@ button:focus {
     position: relative;
     overflow:hidden;
     font-family: 'Bebas Neue';
+    display: none;
     
 }
 
@@ -479,8 +496,8 @@ button:focus {
 }
 
 #calendar-block img{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -584,6 +601,7 @@ button:focus {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+    display: none;
 
    
   
@@ -775,6 +793,7 @@ text-align:center;
   -moz-filter:grayscale(100%);
   -o-filter:grayscale(100%);
   filter:grayscale(100%);
+  display: none;
   
 }
 
@@ -802,12 +821,25 @@ text-align:center;
     font-size: 24px;
 }
 
-.mem-container{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.mem-container h1{
+    text-align: center;
+    margin:25px auto 50px;
+ 
 }
 
+.mem-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
+.second-mem-container{
+    margin-top: 75px;
+}
+
+.executive-position
+{
+    line-height: 1.2;
+}
 #member-block{
 	margin-top: 10px;
     margin-bottom: 10px;
@@ -919,6 +951,7 @@ text-align:center;
     margin: 0 auto;
     width: 100%;
     position: relative;
+    display:none;
 }
 
 #contact-header{
