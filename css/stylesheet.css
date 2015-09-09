@@ -839,6 +839,9 @@ text-align:center;
 .executive-position
 {
     line-height: 1.2;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #member-block{
 	margin-top: 10px;
