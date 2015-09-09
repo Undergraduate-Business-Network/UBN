@@ -105,6 +105,7 @@ $(document).scroll(function(){
     if($(this).scrollTop() > 100)
     {   
        $('.navbar').css({"background":"#007bb5"});
+        //$('.navbar').css({"background":"#313335"});
        $('.navbar').css({"border-bottom": "5px solid #313335"});
        $('#logo').css({"height": "50px"});
        $('.navbar').css({"padding-bottom": "0px"});
@@ -120,7 +121,8 @@ $(document).scroll(function(){
        
        $('.navbar').css({"background":"transparent"});
        //$('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
-        $('.navbar-recruit').css({ "background-color": "rgba(49, 51, 53,1)"});
+        //$('.navbar-recruit').css({ "background-color": "rgba(49, 51, 53,.4)"});
+        $('.navbar-recruit').css({ "background-color": "rgba(0, 123, 181, 1)"});
        $('.navbar-member').css({"background-color": "#007bb5"});
   
        $('.navbar-collapse').css({"background":"transparent"});

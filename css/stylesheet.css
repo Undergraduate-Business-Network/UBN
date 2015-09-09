@@ -394,8 +394,8 @@ button:focus {
 /******************************** RECRUIT PAGE *******************************/
 
 .navbar-recruit{
-    background-color: rgba(49, 51, 53, 1);
-    /*background-color: rgba(0, 123, 181, 1);*/
+    /*background-color: rgba(49, 51, 53, 1);*/
+    background-color: rgba(0, 123, 181, 1);
     /*background-color: #313335;*/
 
 }
