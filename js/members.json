@@ -18,6 +18,12 @@
         "name":"Eyan Chee"
     },
     {
+        "linkedin":"https://www.linkedin.com/in/elizabethvchiang",
+        "memProfile":"members/member54.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Elizabeth Chiang"
+    },
+    {
         "linkedin":"https://www.linkedin.com/in/christiewcheung",
         "memProfile":"members/member4.html",
         "img":"img/member-pics/Filler-pic.png",
@@ -120,12 +126,6 @@
         "name":"Joyce Lam"
     },
     {
-        "linkedin":"https://www.linkedin.com/in/andy10alau",
-        "memProfile":"members/member21.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Andy Lau"
-    },
-    {
         "linkedin":"https://www.linkedin.com/pub/brian-lee/84/106/a2",
         "memProfile":"members/member22.html",
         "img":"img/member-pics/Filler-pic.png",
@@ -142,12 +142,6 @@
         "memProfile":"members/member24.html",
         "img":"img/member-pics/Filler-pic.png",
         "name":"Jackie Lee"
-    },
-    {
-        "linkedin":"https://www.linkedin.com/in/jeffreyjlee10",
-        "memProfile":"members/member25.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Jeffrey Lee"
     },
     {
         "linkedin":"https://www.linkedin.com/in/lauraeunjilee",
@@ -178,12 +172,6 @@
         "memProfile":"members/member30.html",
         "img":"img/member-pics/Filler-pic.png",
         "name":"Lenny Luc"
-    },
-    {
-        "linkedin":"https://www.linkedin.com/in/kevinjmach",
-        "memProfile":"members/member31.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Kevin Mach"
     },
     {
         "linkedin":"https://sg.linkedin.com/pub/jason-eka-putra-masong/5b/34b/7b4",
@@ -258,12 +246,6 @@
         "name":"Norman Sun"
     },
     {
-        "linkedin":"#",
-        "memProfile":"members/member44.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Daniel Sung"
-    },
-    {
         "linkedin":"https://www.linkedin.com/in/timothyhtam",
         "memProfile":"members/member45.html",
         "img":"img/member-pics/Filler-pic.png",
@@ -310,12 +292,6 @@
         "memProfile":"members/member52.html",
         "img":"img/member-pics/Filler-pic.png",
         "name":"Zachary Yuen"
-    },
-    {
-        "linkedin":"#",
-        "memProfile":"members/member53.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Donna Zhou"
-    }  
+    }
 ]
     

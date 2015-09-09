@@ -120,7 +120,7 @@ $(document).scroll(function(){
        
        $('.navbar').css({"background":"transparent"});
        //$('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
-        $('.navbar-recruit').css({"background-color": "rgba(0, 123, 181, 1)"});
+        $('.navbar-recruit').css({ "background-color": "rgba(49, 51, 53,1)"});
        $('.navbar-member').css({"background-color": "#007bb5"});
   
        $('.navbar-collapse').css({"background":"transparent"});

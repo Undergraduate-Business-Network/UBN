@@ -394,8 +394,9 @@ button:focus {
 /******************************** RECRUIT PAGE *******************************/
 
 .navbar-recruit{
-   /*background-color: rgba(48, 48, 48, .4);*/
-    background-color: rgba(0, 123, 181, 1);
+    background-color: rgba(49, 51, 53, 1);
+    /*background-color: rgba(0, 123, 181, 1);*/
+    /*background-color: #313335;*/
 
 }
 
@@ -468,12 +469,19 @@ button:focus {
     }
 
 #calendar-block{
-    height: 200px;
+    height: 270px;
     margin-bottom: 25px;
     margin-top: 25px;
     text-align: center;
+    width: 225px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+#calendar-block img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
 .calendar-title h1{
@@ -509,6 +517,8 @@ button:focus {
 	font-weight: bolder;
 
 }
+
+
 
 
 #event-description{
@@ -691,6 +701,10 @@ text-align:center;
 
 }
 
+.sponsors-wrapper{
+    margin-bottom: 100px;
+}
+
 .sponsor-logo img{
 
     margin-left: auto;
@@ -721,6 +735,7 @@ text-align:center;
     width: 70%;
     text-decoration: none;
     border-style: none;
+
 }
 
 #sponsor-logo{
