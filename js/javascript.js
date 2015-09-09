@@ -105,14 +105,14 @@ $(document).scroll(function(){
     if($(this).scrollTop() > 100)
     {   
        $('.navbar').css({"background":"#007bb5"});
-       $('.navbar').css({"border-bottom": "5px solid #303030"});
+       $('.navbar').css({"border-bottom": "5px solid #313335"});
        $('#logo').css({"height": "50px"});
        $('.navbar').css({"padding-bottom": "0px"});
-       /*$('.navbar').css('transition', '.5s');
+       $('.navbar').css('transition', '.5s');
         $('.navbar').css('-o-transition', '.5s');
         $('.navbar').css('-moz-transition', '.5s');
         $('.navbar').css('-webkit-transition', '.5s');
-        $('.navba').css('-ms-transition', '.5s');*/
+        $('.navba').css('-ms-transition', '.5s');
 
      
        
@@ -120,17 +120,17 @@ $(document).scroll(function(){
        
        $('.navbar').css({"background":"transparent"});
        //$('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
-        $('.navbar-recruit').css({"background-color": "rgba(0, 123, 181, .4)"});
+        $('.navbar-recruit').css({"background-color": "rgba(0, 123, 181, 1)"});
        $('.navbar-member').css({"background-color": "#007bb5"});
   
        $('.navbar-collapse').css({"background":"transparent"});
        $('.navbar').css({"border-bottom": "transparent"});
        $('#logo').css({"height": "65px"});
-        /*$('.navbar').css('transition', '.5s');
+        $('.navbar').css('transition', '.5s');
         $('.navbar').css('-o-transition', '.5s');
         $('.navbar').css('-moz-transition', '.5s');
         $('.navbar').css('-webkit-transition', '.5s');
-        $('.navba').css('-ms-transition', '.5s');*/
+        $('.navba').css('-ms-transition', '.5s');
 
 
     }
@@ -262,12 +262,12 @@ $("#menu-toggle, .mask, #close-button").click(function(e) {
     $('.mask').toggleClass('toggled');
     $('#slide-wrapper').toggleClass('toggled');
     if($('#slide-wrapper').css('visibility') === 'visible'){
-        $('#logo').css('transition','.25s');
-        $('#logo').css('-o-transition','.25s');
-        $('#logo').css('-ms-transition','.25s');
-        $('#logo').css('-moz-transition','.25s');
-        $('#logo').css('-webkit-transition','.25s');
         $('.navbar').css('visibility', 'visible');
+        $('#logo, .navbar').css('transition','1s');
+        $('#logo').css('-o-transition','.5s');
+        $('#logo').css('-ms-transition','.5s');
+        $('#logo').css('-moz-transition','.5s');
+        $('#logo').css('-webkit-transition','.5s');
     }
     else{
         $('.navbar').css('visibility', 'hidden');

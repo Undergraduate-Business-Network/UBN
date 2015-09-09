@@ -47,7 +47,7 @@
     height: 85px;
     padding: 0;
     background-color: transparent;
-    transition: .5s;
+    
 
     
 }
@@ -205,6 +205,7 @@ button:focus {
     height: 0;
     background-color: #000;
     opacity: 0;
+    transition: opacity 1s;
 
 }
 
@@ -276,7 +277,9 @@ button:focus {
 
 
 #panel-button:hover{
-    background-color: rgba(219, 167, 46, .8)
+    /*background-color: rgba(219, 167, 46, .8);*/
+    background-color: rgba(0, 123, 181, .8);
+ 
     
 }
 
@@ -392,7 +395,7 @@ button:focus {
 
 .navbar-recruit{
    /*background-color: rgba(48, 48, 48, .4);*/
-    background-color: rgba(0, 123, 181, .4)
+    background-color: rgba(0, 123, 181, 1);
 
 }
 
@@ -1066,10 +1069,40 @@ text-align:center;
     margin-bottom: 10px;
     
 }
+
+.view-linkedin{
+    
+    margin-top: 10px;
+    width: 120px;
+    color: white;
+    border: none;
+    
+}
+
+.view-linkedin input{
+    padding: 6px 6px 5px 6px;
+    background-color: #86888a;
+     border: none;
+    font-size: 12px;
+    
+}
+
+.view-linkedin input:focus{
+    outline: 0;
+}
+
+
+.view-linkedin input:hover{
+    background-color: #007bb5;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
 /***************************SITE FOOTER*********************************/
 
 #site-footer{
-	background-color:#303030;
+	background-color:#313335;
 	font-family: 'Open-Sans', Helvetica;
 	color:white;
 	width: 100%;
@@ -1082,7 +1115,7 @@ text-align:center;
 }
 
 #home-page-footer{
-    background-color:#454545;
+    background-color:#313335;
 	font-family: 'Open-Sans', Helvetica;
 	color:white;
 	width: 100%;
