@@ -117,7 +117,7 @@
 }
 
 body{
-
+    
    overflow-x: hidden; 
 }
 
@@ -246,7 +246,7 @@ button:focus {
     height: 100%;
     padding: 0;
     margin-top: -20px;
-    display: none;
+    opacity: 0;
 
 
 }
@@ -428,7 +428,7 @@ button:focus {
     position: relative;
     overflow:hidden;
     font-family: 'Bebas Neue';
-    display: none;
+    opacity: 0;
     
 }
 
@@ -601,7 +601,7 @@ button:focus {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-    display: none;
+  opacity: 0;
 
    
   
@@ -793,7 +793,7 @@ text-align:center;
   -moz-filter:grayscale(100%);
   -o-filter:grayscale(100%);
   filter:grayscale(100%);
-  display: none;
+  opacity: 0;
   
 }
 
@@ -951,7 +951,7 @@ text-align:center;
     margin: 0 auto;
     width: 100%;
     position: relative;
-    display:none;
+    opacity: 0;
 }
 
 #contact-header{
