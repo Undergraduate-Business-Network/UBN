@@ -14,8 +14,7 @@ $(function() {
 
 
 $(document).ready(function(){
-    $('#home-panel, #first-about-panel, #member-panel, #contact-panel, .recruit-banner').animate({"opacity":"1"},'1000');
-    
+ 
     $('.sponsor-logo').slick({
       dots: false,
       infinite: true,
@@ -53,7 +52,10 @@ $(document).ready(function(){
     });
     });
 
-
+$(document).ready(function(){
+    $('#home-panel, #first-about-panel, #member-panel, #contact-panel, .recruit-banner').animate({"opacity":"1"},'1000');
+});
+    
 						
 /*
 $(document).ready(function(){
