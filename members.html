@@ -79,20 +79,20 @@
             </div>
 
         </nav> <!-- /.navbar -->
-    
+<div class = "darken-bg">
 <section id="member-panel" data-type="background" data-speed="10">
+    </section>
     <div id = "mem-panel-content">
         <p>Get to know our<p>
-        <h1>Members</h1>
-        
+        <h1>Members</h1>  
     </div>
-</section>
+</div>  
 
 <div class = "container mem-container">
-<div class = "container first-mem-container">
+
     
     <div ng-controller = "eMemberController">
-    <h1>Executive Members</h1>
+
    
     <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-2" id = "member-block" ng-repeat = "eMember in eMembers">
         
@@ -104,23 +104,18 @@
             </div>
             <div class ="image"><img ng-src="{{eMember.img}}" alt="image" width="150"> </div>  
         </div>
-        <div class = "executive-position">
-        <p>{{eMember.name}}</p>
-        <p>{{eMember.position}}</p>
+        <div class = "member-name">
+            <strong>{{eMember.name}}</strong>
+            <p>{{eMember.position}}</p>
         </div> 
     </div> 
 
-    
         
-</div>
-    
 </div>
 
-    
-   <div class = "container second-mem-container"> 
+
+
     <div ng-controller = "memberController">
-    <h1 class = "member-header"> Members</h1>
-        
     <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-2" id = "member-block" ng-repeat = "member in members">
         <div class = "img-container">
             <div class = "member-icon-row"> 
@@ -130,14 +125,15 @@
             </div>
             <div class ="image"><img ng-src="{{member.img}}" alt="image" width="150"> </div>  
         </div>
-        
-        <p>{{member.name}}</p>
+        <div class = "member-name">
+            <strong>{{member.name}}</strong>
+        </div>
      
     </div>
        </div>
     
 </div> <!--/Container-->
-        </div>
+
 <footer id = "site-footer">
     <div class = "footer-contents">
     <div class = "contact">
