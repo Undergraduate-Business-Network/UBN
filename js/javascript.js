@@ -14,7 +14,6 @@ $(function() {
 
 
 $(document).ready(function(){
-    /*$('#landing-home').css('background','url(../img/bridge.jpg)');*/
     
 $('.sponsor-logo').slick({
   dots: false,

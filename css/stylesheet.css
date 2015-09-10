@@ -246,8 +246,7 @@ button:focus {
     height: 100%;
     padding: 0;
     margin-top: -20px;
-    /*opacity: 0;*/
-
+ 
 
 }
 
@@ -718,7 +717,7 @@ text-align:center;
 
 
 }
-/*
+
 .sponsors-wrapper{
     margin-bottom: 100px;
 }
@@ -732,6 +731,7 @@ text-align:center;
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 .sponsors h1{
 	margin-top: 75px;
@@ -749,11 +749,27 @@ text-align:center;
     width: 70%;
     text-decoration: none;
     border-style: none;
-    visibility: visible
 
-}*/
+}
 
+/*
+#sponsor-logo{
+	text-align:center;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   
 
+}
+
+.sponsor-logos{
+    max-width: 850px;
+    width: 90%;
+	text-align:center;
+	margin-bottom: 150px;
+ 
+}
+*/
 /***************************** END OF ABOUT PAGE **************************/
 
 
@@ -774,7 +790,7 @@ text-align:center;
   -moz-filter:grayscale(100%);
   -o-filter:grayscale(100%);
   filter:grayscale(100%);
- 
+
   
 }
 
