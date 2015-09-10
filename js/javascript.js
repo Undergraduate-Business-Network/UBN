@@ -1,5 +1,5 @@
 //smooth scrolling - JQuery Easin plugin
-$(function() {
+/*$(function() {
     $('.smooth-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -7,11 +7,9 @@ $(function() {
         }, 1200, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+});*/
 
  
-    
-
 
 $(document).ready(function(){
     $('.sponsor-logo').slick({
