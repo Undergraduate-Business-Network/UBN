@@ -14,46 +14,44 @@ $(function() {
 
 
 $(document).ready(function(){
-    /*$('#landing-home').css('background','url(../img/bridge.jpg)');*/
-    $('#home-panel, #first-about-panel, #member-panel, #contact-panel, .recruit-banner').fadeIn(750);
     $('#home-panel, #first-about-panel, #member-panel, #contact-panel, .recruit-banner').animate({"opacity":"1"},'1000');
     
-$('.sponsor-logo').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-    
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-});
+    $('.sponsor-logo').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+    });
 
 
 						
