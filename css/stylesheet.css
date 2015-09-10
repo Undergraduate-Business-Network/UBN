@@ -731,9 +731,6 @@ text-align:center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    
-   
-    
 }
 
 
@@ -753,6 +750,7 @@ text-align:center;
     width: 70%;
     text-decoration: none;
     border-style: none;
+    display: block;
 
 }
 
