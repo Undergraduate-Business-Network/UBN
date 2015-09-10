@@ -15,8 +15,6 @@ $(function() {
 
 $(document).ready(function(){
     /*$('#landing-home').css('background','url(../img/bridge.jpg)');*/
-    $('#home-panel, #first-about-panel, #member-panel, #contact-panel, .recruit-banner').fadeIn(750);
-    
     
 $('.sponsor-logo').slick({
   dots: false,
