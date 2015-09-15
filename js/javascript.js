@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('#home-panel, #first-about-panel, #member-panel').animate({opacity:.8},"slow");
     $('#contact-panel').animate({opacity:.5},"slow");
     
-    $('.sponsor-logo').slick({
+    $('.sponsor-element').slick({
       dots: false,
       infinite: true,
       speed: 300,
@@ -37,6 +37,31 @@ $(document).ready(function(){
         }
       ]
     });
+    
+    /**
+     *  Function to show and hide sidebar for collapsed navigation
+     **/
+    var btnDisabled = false;
+    $("#menu-toggle, .mask, #close-button").click(function(e) {
+        if (btnDisabled){return;}
+        btnDisabled = true;
+        setTimeout(function(){
+            btnDisabled = false;}, 1000);
+        $('.mask').toggleClass('toggled');
+        $('#slide-wrapper').toggleClass('toggled');
+
+        if($('#slide-wrapper').css('visibility') === 'visible'){
+            $('.navbar').css('visibility', 'visible').animate({opacity: 1.0}, 1000);
+
+        }
+        else{
+            $('.navbar').css('visibility', 'hidden').animate({opacity: 0}, 0);
+
+
+
+
+        }
+    });
 });
 
 
@@ -46,35 +71,35 @@ $(document).ready(function(){
 $(document).scroll(function(){
     if($(this).scrollTop() > 100)
     {   
-       $('.navbar').css({"background":"#007bb5"});
-        //$('.navbar').css({"background":"#313335"});
-       $('.navbar').css({"border-bottom": "5px solid #313335"});
-       $('#logo').css({"height": "50px"});
-       $('.navbar').css({"padding-bottom": "0px"});
-       $('.navbar').css('transition', '.5s');
-        $('.navbar').css('-o-transition', '.5s');
-        $('.navbar').css('-moz-transition', '.5s');
-        $('.navbar').css('-webkit-transition', '.5s');
-        $('.navba').css('-ms-transition', '.5s');
-
-     
-       
-    } else {
-       
-       $('.navbar').css({"background":"transparent"});
-       //$('.navbar-recruit').css({"background-color": "rgba(48, 48, 48, .4)"});
-        //$('.navbar-recruit').css({ "background-color": "rgba(49, 51, 53,.4)"});
-        $('.navbar-recruit').css({ "background-color": "rgba(0, 123, 181, 1)"});
-       $('.navbar-member').css({"background-color": "#007bb5"});
-  
-       $('.navbar-collapse').css({"background":"transparent"});
-       $('.navbar').css({"border-bottom": "transparent"});
-       $('#logo').css({"height": "65px"});
+        $('.navbar').css({"background":"#007bb5"});
+        $('.navbar').css({"padding-bottom": "0px"});
+        $('.navbar').css({"border-bottom": "5px solid #313335"});
+        /*$('.navbar').animate({
+            "background-color": "#007bb5", 
+            "padding-bottom": "0px", 
+            "border-bottom": "5px solid #313335"}, 1000);*/
+                             
+        $('#logo').css({"height": "50px"});
+        
         $('.navbar').css('transition', '.5s');
         $('.navbar').css('-o-transition', '.5s');
         $('.navbar').css('-moz-transition', '.5s');
         $('.navbar').css('-webkit-transition', '.5s');
         $('.navba').css('-ms-transition', '.5s');
+       
+    } 
+    else {
+       $('.navbar').css({"background":"transparent"});
+       $('.navbar-recruit').css({ "background-color": "rgba(0, 123, 181, 1)"});
+       $('.navbar-member').css({"background-color": "#007bb5"});
+       $('.navbar-collapse').css({"background":"transparent"});
+       $('.navbar').css({"border-bottom": "transparent"});
+       $('#logo').css({"height": "65px"});
+       $('.navbar').css('transition', '.5s');
+       $('.navbar').css('-o-transition', '.5s');
+       $('.navbar').css('-moz-transition', '.5s');
+       $('.navbar').css('-webkit-transition', '.5s');
+       $('.navba').css('-ms-transition', '.5s');
 
     }
 });
@@ -125,32 +150,7 @@ $(window).scroll(function(){
   
 });
 
-/**
- *  Function to show and hide sidebar for collapsed navigation
- **/
-$("#menu-toggle, .mask, #close-button").click(function(e) {
-    $('.mask').toggleClass('toggled');
-    $('#slide-wrapper').toggleClass('toggled');
-    if($('#slide-wrapper').css('visibility') === 'visible'){
-        $('.navbar').css('visibility', 'visible');
-        $('#logo, .navbar').css('transition','1s');
-        $('#logo').css('-o-transition','.5s');
-        $('#logo').css('-ms-transition','.5s');
-        $('#logo').css('-moz-transition','.5s');
-        $('#logo').css('-webkit-transition','.5s');
-    }
-    else{
-        $('.navbar').css('visibility', 'hidden');
-        $('#logo, .navbar').css('transition','0s');
-        $('#logo').css('-o-transition','0s');
-        $('#logo').css('-ms-transition','0s');
-        $('#logo').css('-moz-transition','0s');
-        $('#logo').css('-webkit-transition','0s');
 
-            
-            
-    }
-});
 
 /**
  *  Function to validate the information in the contact form
