@@ -364,10 +364,10 @@ button:focus {
 #presidential-message h2{
 
 	margin-top: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 	text-align: center;
-	text-transform: uppercase;
-	font-size: 24px;
+	
+	font-size: 32px;
 
 }
 
@@ -685,10 +685,10 @@ button:focus {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-family:'Open sans';
-    font-size: 42px;
- 
+    font-size: 32px;
 	margin-bottom: 75px;
 	text-align:center;
+    color: black;
 }
 
 .provide-panel{
@@ -732,8 +732,9 @@ button:focus {
 
 }
 
-#wwa-left{
+#wwa-left {
     text-align:center;
+  
 
 }
 
@@ -766,8 +767,9 @@ button:focus {
 	margin-top: 75px;
 	font-family: 'Open Sans';
 	text-align: center;
-	font-size: 42px;
-    text-transform: uppercase;
+	font-size: 38px;
+    color: black;
+   
 	
 }
 
