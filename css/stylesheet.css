@@ -807,7 +807,7 @@ button:focus {
 /***************************** MEMBERS PAGE **************************/
 
 #member-panel{
-  background: url(../img/group_pic.jpg);
+  background: url(../img/group.jpg);
   height: 100%;
   min-height: 600px;
   margin: 0 auto;
