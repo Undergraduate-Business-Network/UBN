@@ -255,7 +255,7 @@ button:focus {
 }
 
 #home-panel{
-     background: url(../img/bridge.jpg);
+    background: url(../img/bridge.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -434,15 +434,9 @@ button:focus {
 
 /******************************** RECRUIT PAGE *******************************/
 
-.navbar-recruit{
-    /*background-color: rgba(49, 51, 53, 1);*/
-    background-color: rgba(0, 123, 181, 1);
-    /*background-color: #313335;*/
-
-}
-
+/*
 .recruit-banner{
-    background: url(../img/recruitment-2015.jpg);
+    background: url(../img/geisel2.jpg);
     height: 700px;
     width: 100%;
     top: 0;
@@ -450,18 +444,38 @@ button:focus {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -o-filter:grayscale(100%);
+    filter:grayscale(100%);
     position: relative;
     overflow:hidden;
     font-family: 'Bebas Neue';
     opacity: 0;
-  
     
+}*/
+
+#recruit-panel{
+    background: url(../img/geisel2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+    opacity: 0;
+    height: 100vh;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -o-filter:grayscale(100%);
+    filter:grayscale(100%);
 }
 
 .recruit-text{
     position: relative;
-    top: 20%;
+    margin-top: 10%;
 }
+
 .recruit-banner h1{
     text-transform: uppercase;
     position: relative;
@@ -821,7 +835,7 @@ button:focus {
   -moz-filter:grayscale(100%);
   -o-filter:grayscale(100%);
   filter:grayscale(100%);
-    opacity: 0;
+  opacity: 0;
 
   
 }

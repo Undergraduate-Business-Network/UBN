@@ -2,7 +2,7 @@
     
 $(document).ready(function(){
     $('.recruit-banner').animate({opacity: 1}, "slow");
-    $('#home-panel, #first-about-panel, #member-panel').animate({opacity:.8},"slow");
+    $('#home-panel, #first-about-panel, #member-panel, #recruit-panel').animate({opacity:.8},"slow");
     $('#contact-panel').animate({opacity:.5},"slow");
     
     /**
