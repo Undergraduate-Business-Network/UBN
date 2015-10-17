@@ -83,7 +83,12 @@
         "img":"img/member-pics/shawn-jubran.jpg",
         "name":"Shawn Jubran"
     },
-    
+    {
+        "linkedin":"https://www.linkedin.com/in/kangmijin",
+        "memProfile":"members/member17.html",
+        "img":"img/member-pics/Filler-pic.png",
+        "name":"Mijin Kang"
+    },
     {
         "linkedin":"https://www.linkedin.com/in/dakong94",
         "memProfile":"members/member19.html",
@@ -169,12 +174,6 @@
         "memProfile":"members/member39.html",
         "img":"img/member-pics/Filler-pic.png",
         "name":"Pete Phathayakorn"
-    },
-    {
-        "linkedin":"https://www.linkedin.com/in/susansshen",
-        "memProfile":"members/member40.html",
-        "img":"img/member-pics/Filler-pic.png",
-        "name":"Susan Shen"
     },
     {
         "linkedin":"https://www.linkedin.com/pub/monica-shih/b7/234/895",
