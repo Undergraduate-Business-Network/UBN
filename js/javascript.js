@@ -1,14 +1,11 @@
-
-    
 $(document).ready(function(){
     $('.recruit-banner').animate({opacity: 1}, "slow");
     $('#home-panel, #first-about-panel, #member-panel, #recruit-panel').animate({opacity:.8},"slow");
     $('#contact-panel').animate({opacity:.5},"slow");
-    
+
     /**
      *  Function to show and hide sidebar for collapsed navigation
      **/
-    
     var btnDisabled = false;
     $("#menu-toggle, .mask, #close-button").click(function(e) {
         if (btnDisabled){return;}
@@ -24,9 +21,6 @@ $(document).ready(function(){
         }
         else{
             $('.navbar').css('visibility', 'hidden').animate({opacity: 0}, 0);
-
-
-
 
         }
     });
@@ -139,7 +133,6 @@ $(window).scroll(function(){
         $('#challenge').css('opacity','1');
         
     }
-    
     else if($(window).scrollTop() > 150){
         $('#conquer').css('opacity','0');
         $('#challenge').css('opacity','1.0');
@@ -153,14 +146,10 @@ $(window).scroll(function(){
   
 });
 
-
-
 /**
  *  Function to validate the information in the contact form
  **/
 function validate(){
-    
-    
     var nameVal = document.getElementById("name").value;
     var emailVal = document.getElementById("email").value;
     var messageVal = document.getElementById("message").value;
@@ -204,7 +193,6 @@ function validate(){
     }
     
 }
-
 
 /**
  * Google Map plugin for the contact page
