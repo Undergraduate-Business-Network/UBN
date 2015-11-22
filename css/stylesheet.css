@@ -45,6 +45,7 @@
 
     z-index: 500 !important;
     height: 85px;
+
     padding: 0;
     background-color: transparent;
     
@@ -117,9 +118,13 @@
 }
 
 body{
-    
-   overflow-x: hidden; 
+  overflow-x: hidden; 
 }
+
+.container-mem-profile{
+    height: calc(100vh - 100px);
+}
+
 
 button:focus {
     outline:0;
@@ -1224,9 +1229,8 @@ button:focus {
     top: 100%;
 	bottom: 0;
     height: 100px;
-	position: relative;
+	position:relative;
     overflow-x: hidden;
-
 }
 
 #home-page-footer{
